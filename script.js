@@ -144,16 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.opacity = '1';
     }, 100);
 
-    //cv download
-    const cvButton = document.querySelector('.cv-btn');
-    if (cvButton) {
-        cvButton.addEventListener('click', function(e) {
-            // If the CV file doesn't exist, show a message
-            e.preventDefault();
-            alert('Please add your CV file to the "files" folder as "Mara_Elisa_Bujor_CV.pdf"');
-        });
-    }
-});
+
 
 //reduce animations on mobile for better performance
 if (window.innerWidth <= 768) {
