@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mara Elisa Bujor | Web Development Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--animated background -->
+<div class="animated-bg">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+</div>
+
+
+<!-- nav-->
+<nav class="nav">
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <!--hero -->
+  <section id="home" class="hero">
+
+    <div class="hero-content fade-in">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="images/profile.jpg" alt="Mara Elisa Bujor" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'background: linear-gradient(135deg, var(--primary), var(--secondary)); width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem; font-weight: 700;\'>M</div>'">
+        </div>
+        <div class="profile-rings"></div>
+      </div>
+
+      <h1>Mara Elisa Bujor</h1>
+      <div class="hero-subtitle">✨ Web Development Student ✨ </div>
+
+      <div class="hero-description">
+        <p>
+          I’m a Web Development student at SRH University Berlin, currently looking for an internship where I can bring together creativity, technology, and real-world problem solving.
+        </p>
+
+        <p>
+          During my studies, I’ve worked on a variety of projects,  from designing playful user interfaces for kids, to building full-stack applications with modern frameworks.
+          My work combines frontend development (with React, HTML/CSS, JavaScript) and backend tools (like Strapi, Node.js, SQL, and Docker), and I'm always excited to explore new tools and approaches along the way.
+        </p>
+
+        <p>
+          I’m especially eager to grow my skills in <strong>design</strong>, but honestly, I’m curious about everything, whether it’s how systems work behind the scenes and how users experience an interface. I’ve also explored <strong>game design and development</strong>.
+        </p>
+
+        <p>
+          If you're looking for a curious, motivated intern who’s not afraid to dive into new challenges and collaborate, I’d love to hear from you!
+        </p>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#cv" class="btn btn-secondary">
+          <i class="fas fa-file-alt"></i> Download CV
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-coffee"></i> Let's Connect
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--projects -->
+  <section id="projects" class="section">
+    <h2 class="section-title fade-in">Featured Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-icon">🧘‍♀️</div>
+          <div class="project-title">Deeply</div>
+        </div>
+
+        <div class="project-description">
+          A meditation and mindfulness app concept designed to help teenagers navigate stress and mental health challenges. We first had to create in groups an app and then, alone its landing page. I choose mine to be calming, youth-friendly with an intuitive navigation and peaceful aesthetics.
+        </div>
+
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">Figma</span>
+          <span class="tech-tag">UX Design</span>
+        </div>
+
+
+        <div class="project-links">
+          <a href="https://github.com/Maraely/deeply" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+
+        <div class="project-media">
+          <div class="screenshots">
+            <img src="images/deeply1.png" alt="Deeply landing page design" onerror="this.style.display='none'">
+            <img src="images/deeply2.png" alt="Deeply user interface" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-icon">🎮</div>
+          <div class="project-title">Edurino Interactive Experience</div>
+        </div>
+
+        <div class="project-description">
+          An innovative split-screen kiosk experience for Edurino's educational tablet games. The design strategically targets both children and parents simultaneously, engaging kids with colorful, interactive elements while providing parents with product information.
+        </div>
+
+        <div class="project-tech">
+          <span class="tech-tag">Figma</span>
+          <span class="tech-tag">ProtoPie</span>
+          <span class="tech-tag">Interactive Design</span>
+          <span class="tech-tag">UX Research</span>
+        </div>
+
+
+        <div class="project-media">
+          <video width="100%" controls>
+            <source src="media/edurino.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-icon">♿</div>
+          <div class="project-title">Handycap Accessibility Platform</div>
+        </div>
+
+        <div class="project-description">
+          This project was about building an app to make events more accessible for people with disabilities.
+          The focus wasn’t on having a perfect design, but on making the backend work well and support different kinds of users, events, and accessibility needs.         </div>
+
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Strapi CMS</span>
+          <span class="tech-tag">REST API</span>
+          <span class="tech-tag">Node.js</span>
+        </div>
+
+        <div class="project-description">
+          <strong>Technical Achievement:</strong>  After creating the base backend in Strapi with the professor, we continued to set up the database relationships, and added features like role-based permissions and multilingual support.
+          It was a great chance to practice how a real system can handle complex data while still keeping it usable.
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Maraely/handycap_app.git" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV-->
+  <section id="cv" class="section cv-section">
+    <h2 class="section-title fade-in">Curriculum Vitae</h2>
+
+    <div class="cv-container fade-in">
+      <div class="cv-preview">
+        <div class="cv-header">
+          <div class="cv-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="cv-info">
+            <h3>My Resume</h3>
+            <p>Download my CV to learn more about my experience, education, and skills.</p>
+          </div>
+        </div>
+
+
+
+        <div class="cv-download">
+          <a href="media/cv.pdf" download class="btn btn-primary cv-btn">
+            <i class="fas fa-download"></i> Download CV (PDF)
+          </a>
+          <p class="cv-note">Last updated: August 2025</p>
+        </div>
+      </div>
+
+      <div class="skills-overview">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Frontend</h4>
+            <div class="skill-items">
+              <span class="skill-item">HTML</span>
+              <span class="skill-item">CSS</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">React</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Backend</h4>
+            <div class="skill-items">
+              <span class="skill-item">Node.js</span>
+              <span class="skill-item">Strapi</span>
+              <span class="skill-item">SQL</span>
+              <span class="skill-item">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Design</h4>
+            <div class="skill-items">
+              <span class="skill-item">Figma</span>
+              <span class="skill-item">ProtoPie</span>
+              <span class="skill-item">UX/UI Design</span>
+              <span class="skill-item">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact-->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title fade-in">Let's Create Together</h2>
+
+    <div class="contact-grid">
+      <div class="contact-card fade-in">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email</h3>
+        <a href="mailto:elisamarabujor@gmail.com">elisamarabujor@gmail.com</a>
+      </div>
+
+      <div class="contact-card fade-in">
+        <div class="contact-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <h3>Phone</h3>
+        <a href="tel:+491622380094">+49 162 2380094</a>
+      </div>
+
+      <div class="contact-card fade-in">
+        <div class="contact-icon">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3>GitHub</h3>
+        <a href="https://github.com/maraely" target="_blank">@maraely</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
