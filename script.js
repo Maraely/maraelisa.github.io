@@ -28,7 +28,7 @@ function initSmoothScroll() {
     });
 }
 
-//  effect for background orbs
+// effect for background orbs
 function initParallax() {
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
@@ -81,24 +81,23 @@ function initTypingEffect() {
     setTimeout(typeWriter, 1000);
 }
 
-// enhanced cursor trail effect on desktop)
+// enhanced cursor trail effect on desktop
 function initCursorTrail() {
-
     if (window.innerWidth > 768) {
         const cursor = document.createElement('div');
         cursor.className = 'cursor-trail';
         cursor.style.cssText = `
-      position: fixed;
-      width: 20px;
-      height: 20px;
-      background: radial-gradient(circle, var(--primary), var(--secondary));
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      opacity: 0.7;
-      transition: all 0.1s ease;
-      filter: blur(2px);
-    `;
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, var(--primary), var(--secondary));
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.7;
+            transition: all 0.1s ease;
+            filter: blur(2px);
+        `;
         document.body.appendChild(cursor);
 
         document.addEventListener('mousemove', (e) => {
@@ -121,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', handleScrollAnimations);
 
-    //intersection observer for better performance
+    // intersection observer for better performance
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -143,10 +142,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.transition = 'opacity 1s ease';
         document.body.style.opacity = '1';
     }, 100);
+});
 
-
-
-//reduce animations on mobile for better performance
+//reduce animations on mobile
 if (window.innerWidth <= 768) {
     document.addEventListener('DOMContentLoaded', function() {
         // Disable heavy animations on mobile
@@ -156,7 +154,7 @@ if (window.innerWidth <= 768) {
     });
 }
 
-//error for missing images
+// error handling for missing images
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('img');
     images.forEach(img => {
